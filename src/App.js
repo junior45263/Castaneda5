@@ -51,7 +51,7 @@ function App() {
                 sentencias de un método y, opcionalmente, devolver un valor.
               </Col>
             </Row>
-            <Button variant="success">GitHub</Button>{' '}
+            <Button variant="success"  href="https://github.com/junior45263/Castaneda5.git">GitHub</Button>{' '}
            
             
           </Route>
