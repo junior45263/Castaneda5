@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 import { useState, useEffect } from 'react';
 import { gapi } from "gapi-script";
 
+
 function Login() {
 
   const key_login = "889082775733-uft314q6mcdcam2in0dd7rd0nsq8uprc.apps.googleusercontent.com";
@@ -40,7 +41,6 @@ function Login() {
   }
   return (
     <div className="center">
-     
       <div>
         <GoogleLogin
           clientId={key_login}
@@ -52,13 +52,15 @@ function Login() {
       </div>
 
       <div class={user ? "profile" : "hidden"}>
-        <img src={user.imageUrl} alt=""/>
+        <img src={user.imageUrl} alt="" />
         <h3>{user.name}</h3>
         <h3>{user.email}</h3>
         <h3>{user.googleId}</h3>
       </div>
-
+    
     </div>
+    
+    
   );
 }
 export default Login;

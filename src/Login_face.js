@@ -1,5 +1,10 @@
 import FacebookLogin from 'react-facebook-login';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import ReCAPTCHA from "react-google-recaptcha";
+
+const onChange = () => {
+  console.log('Hubo un cambio');
+}
 
 function Login_face() {
   const responseFacebook = (respuesta_correcta) => {
@@ -33,7 +38,14 @@ function Login_face() {
         fields="name,email,picture"       
         callback={responseFacebook} />     
         </center>
-      </div>      
+        <div className="recaptcha">
+        <ReCAPTCHA
+          sitekey="6LdYVJUlAAAAAPg8HFsKuytO6AxSWj1Pp0dCMsZZ"
+          onChange={onChange}
+        />
+      </div>
+      </div>  
+          
       );  
 }
 

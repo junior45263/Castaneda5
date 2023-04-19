@@ -15,6 +15,8 @@ import Logout from "./LoginLogout";
 import Login_form from "./Login_from";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import BarraSuperior from "./BarraSuperior";
+
 
 function App() {
   return (
@@ -74,27 +76,33 @@ function App() {
               >
                 GitHub
               </Button>{" "}
+            
             </Route>
 
             <Route path="/alumno">
+              <BarraSuperior/>
               <center>
                 <h1>Bernardo Castañeda</h1>
               </center>
+          
             </Route>
 
             <Route path="/carrera">
+            <BarraSuperior/>
               <center>
                 <h1>Desarrollo De Softawre Multiplataforma</h1>
               </center>
             </Route>
 
             <Route path="/universidad">
+            <BarraSuperior/>
               <center>
                 <h1>UTD</h1>
               </center>
             </Route>
 
             <Route path="/logo">
+            <BarraSuperior/>
               <center>
                 <h1>Logo De La univerdidad </h1>
               </center>
@@ -112,6 +120,7 @@ function App() {
             </Route>
 
             <Route path="/foto">
+            <BarraSuperior/>
               <center>
                 <h1>Foto Profesional</h1>
               </center>
@@ -128,6 +137,7 @@ function App() {
             </Route>
 
             <Route path="/Carrusel">
+            <BarraSuperior/>
               <center>
                 <h1>Carrusel</h1>
               </center>
@@ -135,6 +145,7 @@ function App() {
             </Route>
 
             <Route path="/maps">
+            <BarraSuperior/>
               <center>
                 <h1>Maps</h1>
                 <Maps />
@@ -142,6 +153,7 @@ function App() {
             </Route>
 
             <Route path="/curriculum">
+            <BarraSuperior/>
               <center>
                 <h1>Curriculum</h1>
               </center>
@@ -158,6 +170,7 @@ function App() {
               </center>
             </Route>
             <Route path="/mockup">
+            <BarraSuperior/>
               <center>
                 <h1>Mockup</h1>
               </center>
@@ -196,6 +209,7 @@ function App() {
             </Route>
 
             <Route path="/CerrarSesion">
+            <BarraSuperior/>
               <center>
                 <h1>Cerrar Sesion</h1>
               </center>
@@ -203,12 +217,15 @@ function App() {
             </Route>
 
             <Route path="/Login_form">
+            <BarraSuperior/>
               <center>
                 <h1>Login_form</h1>
               </center>
               <Login_form />
+              
             </Route>
             <Route path="/Login">
+            <BarraSuperior/>
               <center>
                 <h1>Login</h1>
               </center>
